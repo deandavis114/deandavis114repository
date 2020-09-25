@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #5555ff
+}
+
+
+header h1 {
+    margin-left: 20px;
+}
+header, footer, main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#profile-pic{
+    float: right;
+    
