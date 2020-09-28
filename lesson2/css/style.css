@@ -1,6 +1,7 @@
 *{
+    box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    
 }
 
 header {
@@ -28,7 +29,16 @@ footer{
 
 }
 
+.visual-hierarchy {
+    text-align: center;
+    background-color: white;
+    padding: ;
+    color: black;
+    border-style: solid;
+    border-radius: 20px;
+}
+
 img{
-    width: 200px
+    width: 100%
     %
 }
