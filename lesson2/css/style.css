@@ -3,12 +3,21 @@
     padding: 0;
 }
 
-h1, h2, h3 {
-    font-family: 'Montserrat', 'Times New Roman', Times, serif
+header {
+    text-align: center;
+    background-color: #887766;
+    padding: ;
+    color: black;
+    border-style: solid;
+    border-radius: 20px;
 }
 
-header, footer, main {
-    background-color: #5555ff
+main{
+
+}
+
+footer{
+
 }
 
 img{
