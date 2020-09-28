@@ -13,12 +13,15 @@ header {
 }
 
 main{
+    display: grid;
+    grid-template-columns: 1fr;
     text-align: center;
     background-color: white;
     padding: ;
     color: black;
     border-style: solid;
     border-radius: 20px;
+    
 }
 
 footer{
