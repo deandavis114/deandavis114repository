@@ -1,1 +1,9 @@
+main {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
 
+.section-company-name {
+    height: 4.6em;
+    line-height: 1.2;
+}
