@@ -41,7 +41,7 @@ main{
 }
 
 .section-container{
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0 auto 25px;
     max-width: 400px;
 }
