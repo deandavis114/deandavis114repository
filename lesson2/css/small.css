@@ -69,7 +69,7 @@ main{
 }
 
 .section-description {
-    text-aliagn: justify;
+    text-align: justify;
     padding: 1em 2em;
     line-height: 1.45em;
     letter-spacing: 0.05em;
