@@ -22,6 +22,10 @@ header{
 .main-title,
 .sub-title
 .section-title {
-    font-family: 'Cantata one', serir;
+    font-family: 'Cantata one', serif;
     letter-spacing: 0.0625;
+}
+
+.main-title {
+    font-size: 2.5em;
 }
