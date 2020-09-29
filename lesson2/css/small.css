@@ -18,3 +18,10 @@ header{
     color: white;
     text-align: center;
 }
+
+.main-title,
+.sub-title
+.section-title {
+    font-family: 'Cantata one', serir;
+    letter-spacing: 0.0625;
+}
