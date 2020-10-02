@@ -10,7 +10,9 @@ body {
     font-family: 'ABeeZee', 'Times New Roman', Times, serif;
 }
 
-header, main, footer {
+header, 
+main, 
+footer {
     padding: 1em 2em;
 }
 
