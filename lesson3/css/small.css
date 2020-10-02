@@ -16,13 +16,17 @@ footer {
     padding: 1em 2em;
 }
 
-nav{
+header {
     background-color: teal;
-    height: 80px;
-    width: 100%;
 }
 
-label.label-title{
+nav{
+
+    text-align: center;
+    box-shadow: 2 2px 15px gray;
+}
+
+.label-title{
     color: white;
     font-family: 'ABeeZee', 'Times New Roman', Times, serif;
     font-size: 35px;
@@ -32,12 +36,11 @@ label.label-title{
 }
 
 nav ul{
-    float: right;
     margin-right: 20px;
 }
 
 nav ul li {
-    display: inline-block;
+    display: block;
     line-height: 80px;
     margin: 0 5px;
 }
@@ -47,12 +50,17 @@ nav ul li a {
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    
+    display: block;
 }
 
-a.active, a:hover {
-    background: turquoise;
-    transition: .5s;
+nav a:hover {
+    background-color: turquoise;
+   
+}
+
+.logo-image {
+    float: left;
+    max-width: 80px;
 }
 
 main{
@@ -65,3 +73,4 @@ footer {
     background-color: teal;
     color: white;
 }
+
