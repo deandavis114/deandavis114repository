@@ -58,6 +58,10 @@ nav a:hover {
    
 }
 
+.active {
+    color: yellow;
+}
+
 .logo-image {
     float: left;
     max-width: 80px;
