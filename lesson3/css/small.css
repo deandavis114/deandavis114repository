@@ -78,3 +78,11 @@ footer {
     color: white;
 }
 
+.section-container{
+    padding: 1em;
+    float: center;
+}
+
+.section-title{
+    padding: 1em;
+}
