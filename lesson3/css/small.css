@@ -17,7 +17,7 @@ footer {
 }
 
 header {
-    background-color: teal;
+    background-color: #15817c;
 }
 
 nav{
@@ -54,12 +54,12 @@ nav ul li a {
 }
 
 nav a:hover {
-    background-color: turquoise;
+    background-color: #15817c;
    
 }
 
 .active {
-    color: yellow;
+    color: rgb(166, 255, 0);
 }
 
 .logo-image {
@@ -74,8 +74,8 @@ main{
 }
 
 footer {
-    background-color: teal;
-    color: white;
+    background-color:  #15817c;
+    color: rgb(255, 255, 255);
 }
 
 .section-container{
@@ -86,3 +86,4 @@ footer {
 .section-title{
     padding: 1em;
 }
+
