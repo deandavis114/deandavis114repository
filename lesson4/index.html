@@ -9,6 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
     <script scr="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
@@ -31,14 +32,30 @@
     </nav>
 
     <main>
-        <section class="section-title">
-            <p>Site purpose goes here</p>
+        <section class="section-container">
+            <p>Hero w/ weather summary</p>
+        </section>
+        <section class="section-container">
+            <p>5 Day Forcast</p>
+        </section>
+        <section class="section-container">
+            <p>Article</p>
+        </section>
+        <section class="section-container">
+            <p>Contact Information</p>
         </section>
     </main>
-    <footer>
-        &copy; <span id="copyright-year"></span>, Company Company. All Rights Reserved.
-    </footer>
+    <footer class="footer-container">
+        &copy; <span id="copyright-year"></span>Weather Day All Rights Reserved.
+        <p id="demo"></p>
+        
+        <script>
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d;
+        </script>
+            </footer>
     <script src="js/script.js"></script>
+
 </body>
 
 </html>
