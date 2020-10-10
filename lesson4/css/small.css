@@ -35,32 +35,56 @@ nav{
     font-weight: bold;
 }
 
-nav ul{
-    margin-right: 20px;
+/*here is the navigation code copied from the exercise*/
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #555;
 }
 
-nav ul li {
-    display: block;
-    line-height: 80px;
-    margin: 0 5px;
+nav {
+    background-color: #CCC;
+    font-family: verdana, sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li a {
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
     display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top: solid rgba(0,0,0,0.3);
 }
 
-nav a:hover {
-    background-color: #15817c;
-   
-}
+nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
 
-.active {
-    color: rgb(237, 240, 61);
-}
+nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff}
+
+nav ul.hide {display: none}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+/*here we are moving on to other things*/
 
 .logo-image {
     float: left;

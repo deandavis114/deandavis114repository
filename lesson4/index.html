@@ -15,19 +15,21 @@
 
 <body>
     <header>
-        <div><img class="logo-image"src="images/sun.png" alt="sun-image"></div>
+        <div><img class="logo-image" src="images/sun.png" alt="sun-image"></div>
         <h1 class="label-title"> WEATHER DAY </h1>
-        <nav>
-            <ul class="navigation">
-               <li><a href="#" onclick="toggleMenu()">&#9976; Menu</a></li>
-               <li><a href="#"></a>Preston</li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-               <li><a href="#"></a></li>
-            </ul>
-        </nav>
     </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
     <main>
         <section class="section-title">
             <p>Site purpose goes here</p>
@@ -38,5 +40,5 @@
     </footer>
     <script src="js/script.js"></script>
 </body>
- 
+
 </html>
