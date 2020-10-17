@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <meta name="description" content="Course portal for WDD 230">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <script scr="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <header>
+        <div><img class="logo-image" src="images/sun.png" alt="sun-image"></div>
+        <h1 class="label-title"> WEATHER DAY </h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="section-container">
+            <p>Hero w/ weather summary</p>
+        </section>
+        <section class="section-container">
+            <p>5 Day Forcast</p>
+        </section>
+        <section class="section-container">
+            <p>Article</p>
+        </section>
+        <section class="section-container">
+            <p>Contact Information</p>
+        </section>
+    </main>
+    <footer class="footer-container">
+    &copy; <span id="copyright-year"></span>Weather Day All Rights Reserved.
+        <p id="demo"></p>
+        <script>
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d;
+        </script>
+            </footer>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
