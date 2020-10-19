@@ -101,10 +101,11 @@ h2{
 
 .hero-ph {
     margin: 10px auto;
-    background-color: #ccc;
-    border: 1px solid #333;
-    width: 960px;
-    height: 300px;
+    max-width: 960px;
+}
+
+.hero-ph img{
+    max-width: 100%;
 }
 
 .weathersummary {
