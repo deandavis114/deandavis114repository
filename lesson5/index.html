@@ -35,25 +35,22 @@
     <main>
         <h2>Page Title</h2>
         <div class="herodiv">
-            <div class="hero-ph">Image Placeholder</div>
+            <div class="hero-ph"></div>
+            <img src="images/mtn.png" alt="bannerphoto">
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
-                <p>label: value</p>
-                <p>label: value</p>
-                <p>label: value</p>
+                <p>Sunny</p>
+                <p>High: 68</p>
+                <p>Low: 42</p>
+                <p>Humidity: 17%</p>
+                <p>Windspeed: 13mph</p>
             </section>
         </div>
     </main>
-    <footer class="footer-container">
-    &copy; <span id="copyright-year"></span>Weather Day All Rights Reserved.
-        <p id="demo"></p>
-        <script>
-        var d = new Date();
-        document.getElementById("demo").innerHTML = d;
-        </script>
-            </footer>
-    <script src="js/script.js"></script>
-
+    <footer>
+        &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
+        <div id="current-date"></div>
+      </footer>
+      <script src="js/main.js"></script>  
 </body>
-
 </html>
