@@ -23,7 +23,7 @@
             <div class="catch-phrase">All day weather</div>
         </div>
     </header>
-    <nav >
+    <nav>
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primarynav" class="hide">
             <li><a href="#">Home</a></li>
@@ -35,30 +35,126 @@
         </ul>
     </nav>
 
-    <main >
+    <main>
         <h2>Preston, Idaho</h2>
-       <div class="herodiv">
-        <picture class="photoA">
-            <source media="(max-width: 200px)" srcset="images/preston200.jpg">
-            <source media="(max-width: 500px)" srcset="images/preston500.jpg">
-            <source media="(max-width: 800px)" srcset="images/preston800.jpg">
-            <source media="(max-width: 1100px)" srcset="images/preston1100.jpg">
-            <img src="images/preston.jpeg" alt="preston">
-        </picture>
-        <section class="weathersummary">
-                <h3>Weather Summary</h3>
-                <p>Sunny</p>
-                <p>High: 68</p>
-                <p>Low: 42</p>
-                <p>Humidity: 17%</p>
-                <p>Windspeed: 13mph</p>
+        <div class="herodiv">
+            <picture class="photoA">
+                <source media="(max-width: 200px)" srcset="images/preston200.jpg">
+                <source media="(max-width: 500px)" srcset="images/preston500.jpg">
+                <source media="(max-width: 800px)" srcset="images/preston800.jpg">
+                <source media="(max-width: 1100px)" srcset="images/preston1100.jpg">
+                <img src="images/preston.jpeg" alt="preston">
+            </picture>
+            <section class="weathersummary">
+                <h2>Lastest Weather</h2>
+                <div class='flex-container'>
+                    <div class='weather-summary-lables'>
+                        <h3>Currently:</h3>
+                        <p>High:</p>
+                        <p>Wind Chill:</p>
+                        <p>Humidity:</p>
+                        <p>Windspeed:</p>
+                    </div>
+                    <div class='weather-summary-answers'>
+                        <p>Sunny</p>
+                        <p>76 &deg;F</p>
+                        <p>65 &deg:F</p>
+                        <p>55%</p>
+                        <p>15 mph</p>
+                    </div>
+                </div>
             </section>
         </div>
+
+        <section class="five-day">
+            <h3>5 day forcast</h3>
+            <div class="five-day-forecast">
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Wed</div>
+                    <div class="five-day-forecast-content">
+                        <img src="******" alt="*******">
+                        <p> 89 $deg;F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="five-day-forecast">
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Thur</div>
+                    <div class="five-day-forecast-content">
+                        <img src="******" alt="*******">
+                        <p> 89 $deg;F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="five-day-forecast">
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Fri</div>
+                    <div class="five-day-forecast-content">
+                        <img src="******" alt="*******">
+                        <p> 89 $deg;F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="five-day-forecast">
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Sat</div>
+                    <div class="five-day-forecast-content">
+                        <img src="******" alt="*******">
+                        <p> 89 $deg;F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="five-day-forecast">
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Sun</div>
+                    <div class="five-day-forecast-content">
+                        <img src="******" alt="*******">
+                        <p> 89 $deg;F</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <img src="*****" alt="*****">
+            <h3>Wish You Were Here</h3>
+            <div class="article-author">By: Pink floyd</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad error laudantium perspiciatis est
+                reprehenderit pariatur recusandae omnis, sequi aliquam molestiae eligendi quaerat magni iure voluptates
+                nulla nemo ratione enim voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam, sed. Ut, natus. Velit ipsum reiciendis consequatur quis quo error quos recusandae, facere
+                fugit saepe voluptate optio natus sapiente doloremque non. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quibusdam nesciunt possimus laudantium pariatur labore, necessitatibus nulla quidem
+                fugiat officia aut, culpa doloribus. Deserunt optio aperiam sequi repudiandae quam officiis doloribus.
+            </p>
+        </section>
+        <div class="contact-information">
+            <div class="contact-map">
+                <img src="*****" alt="*****">
+            </div>
+            <section class="contact-info-section">
+                <h3>Weather Day</h3>
+                <div class="contact-address">
+                    <div>3000 W 3600 N</div>
+                    <div>Preston, ID 83263</div>
+                    <br>
+                    <div>&#9742; 999-999-9999</div>
+                    <div>&#9993; email@email.com</div>
+                </div>
+                <div class="social-media-icons">
+                    <img src="FACEBOOK" alt="">
+                    <img src="TWITTER" alt="">
+                    <img src="YOUTUBE" alt="">
+                    <img src="LINKEDIN" alt="">
+                </div>
+            </section>
+        </div>
+
     </main>
     <footer>
         &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
         <div id="current-date"></div>
-      </footer>
-      <script src="js/script.js"></script>  
+    </footer>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
