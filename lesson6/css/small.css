@@ -127,7 +127,6 @@ picture.photoA {
 }
 
 /*FIVE DAY FORCAST*/
-
 .weather-summary{
     position: absolute;
     top: 5%;
@@ -141,8 +140,86 @@ picture.photoA {
     padding: 0.8rem;
 }
 
+.weather-summary h2{
+    color: var(--background-color);
+    font-size: 1.5em;
+}
+
+.weather-summary-labels {
+    text-align: right;
+    padding: 0 1em 0 0;
+ }
+ 
+ .weather-summary p {
+    margin: 0;
+    padding: 0.25em 0;
+    font-weight: bold;
+ }
+ 
+ .weather-summary-answers p {
+    color: var(--accent-color);
+ }
+
+ .weather-summary h2 {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 0 0.5em;
+ }
+ 
+ .five-day {
+    display: none;
+ }
+ 
+ .article-section {
+    background-color: var(--alternate-color-1-tint);
+ }
+ 
+ .article-author {
+    text-align: center;
+    color: var(--alternate-color-2);
+ }
+ 
+ .article-section img {
+    box-shadow: 0 0 20px #111;
+ }
+ 
+ 
+ a {
+    color: var(--primary-color);
+    text-decoration: none;
+ }
+ 
+ a:visited {
+    color: var(--alternate-color-1);
+ }
+ 
+ .contact-map {
+    display: none;
+ }
+ 
+ .contact-information {
+    background-color: var(--alternate-color-1-tint);
+ }
+ 
+ .contact-information-section {
+    text-align: center;
+ }
+ 
+ .contact-information-section h3 {
+    margin: 0;
+ }
+ 
+ .social-media-icons {
+    padding: 1em 0;
+ }
+ 
+ .social-media-icons img {
+    width: 1.8em;
+ }
+ 
 /*________________________________________________*/
 /*Footer CSS*/
+
+
 footer {
     width: 80%;
     text-align: left;
