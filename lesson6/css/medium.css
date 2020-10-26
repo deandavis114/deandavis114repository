@@ -4,13 +4,20 @@
     display: block;
  }    
  .five-day-forecast{
+     margin: 0 auto;
      display: flex;
+     width: 90%;
      justify-content: center;
  }
  .five-day-forecast-item {
      border: 10px solid  #15817c;
      text-align: center;
  }
+.five-day-forecast-heading{
+    background-color:  #16bbb3;
+    font-weight: bold;
+}
+
  img {
      max-width: 100%;
  }
