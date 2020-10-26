@@ -125,7 +125,9 @@ picture.photoA {
     padding: .5rem;
     box-shadow: 0 0 30px #777;
 }
-
+.flex-container{
+    display: flex;
+}
 /*FIVE DAY FORCAST*/
 .weather-summary{
     position: absolute;
