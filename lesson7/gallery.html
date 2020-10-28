@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dean Davis Assignment Portal</title>
+    <meta name="description" content="Lazy Load Images">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<style>
+
+.gallery {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.grid-item{
+    border: 1px solid black;
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+.grid-item p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #555;
+}
+
+@media screen and (min-width: 760px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+</style>
+
+
+</head>
+
+<body>
+    <main>
+       <section>
+           <h2>Gallery Demo</h2>
+            <div class="gallery">
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+                <div class="grid-item">
+                    <img src="https://picsum.photos/400/300" alt="test image">
+                    <p>this is a cool photo</p>
+                </div>
+            </div>
+
+
+       </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/lazyload.js"></script>
+</body>
+
+</html>
