@@ -5,7 +5,7 @@
 
 
 
-.clearfix:after {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -68,6 +68,8 @@ nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li a {

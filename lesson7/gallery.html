@@ -16,6 +16,12 @@
     </head>
 <style>
 
+.gallery-title {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 1em;
+}
+
 .gallery {
     display:grid;
     grid-template-columns: 1fr;
@@ -39,12 +45,21 @@
 }
 
 @media screen and (min-width: 760px) {
+    .gallery-title {
+    display: grid;
+    justify-items: center;
+}
     .gallery {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 1060px) {
+    .gallery-title {
+    display: grid;
+    justify-items: center;
+}
+    
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -67,7 +82,7 @@
             <div class="catch-phrase">All day weather</div>
         </div>
     </header>
-    <nav>
+    <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primarynav" class="hide">
             <li><a href="#">Home</a></li>
@@ -80,7 +95,7 @@
     </nav>
     <main>
        <section>
-           <h2>Gallery Demo</h2>
+           <h2 class="gallery-title">Picture Gallery</h2>
             <div class="gallery">
                 <div class="grid-item">
                     <img src="images/placeholder.jpg" data-src="https://picsum.photos/400/300" alt="test image">
