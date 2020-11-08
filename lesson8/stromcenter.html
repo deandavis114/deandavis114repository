@@ -35,91 +35,38 @@
     </nav>
 
     <main>
-        <h2>Preston, Idaho</h2>
-        <div class="herodiv">
-            <picture class="photoA">
-                <source media="(max-width: 200px)" srcset="images/preston-200.jpg">
-                <source media="(max-width: 500px)" srcset="images/preston-500.jpg">
-                <source media="(max-width: 800px)" srcset="images/preston-800.jpg">
-                <source media="(max-width: 1100px)" srcset="images/preston-1100.jpg">
-                <img src="images/preston.jpeg" alt="preston">
-            </picture>
-            <section class="weathersummary">
-                <h2>Lastest Weather</h2>
-                <div class='flex-container'>
-                    <div class='weather-summary-lables'>
-                        <p>Curently</p>
-                        <p>High:</p>
-                        <p>Wind Chill:</p>
-                        <p>Humidity:</p>
-                        <p>Windspeed:</p>
-                    </div>
-                    <div class='weather-summary-answers'>
-                        <p>Sunny</p>
-                        <p> <span id="temp">76</span>  &deg;F</p>
-                        <p> <span id="windchill"> 65</span> &deg;F</p>
-                        <p>55%</p>
-                        <p> <span id="speed">15</span> mph</p>
-                    </div>
-                </div>
-            </section>
-        </div>
+        <h1>Report Weather</h1>
+        <form method="get" action="thanks.html"></form>
+            <fieldset>
+                <legend>Applicant Information</legend>
+               <lable>First Name* <input type="text" name="fname" required></lable>
+               <lable>Last Name* <input type="text" name="lname" required></lable>
+               <lable>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></lable>
+               <lable>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></lable>
+               <lable>Website* <input type="eurl" name="url" placeholder="http://" required></lable>
+            </fieldset>
+            <fieldset>
+                <legend>Course Info</legend> 
+                <div>Audience</div>
+                <lable><input type="radio" name="audience" value="beginner">Beginner</lable>
+                <lable><input type="radio" name="audience" value="beginner">Padawan</lable>
+                <lable><input type="radio" name="audience" value="beginner">Master</lable>
 
-        <section class="five-day">
-            <h3>5 day forcast</h3>
-            <div class="five-day-forecast">
-                <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Wed</div>
-                    <div class="five-day-forecast-content">
-                        <img src="images/sunnny.jpg" alt="sunny">
-                        <p> 89 &deg;F</p>
-                    </div>
-                </div>
-                <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Thurs</div>
-                    <div class="five-day-forecast-content">
-                        <img src="images/sunnny.jpg" alt="sunny">
-                        <p> 76 &deg;F</p>
-                    </div>
-                </div>
-                <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Fri</div>
-                    <div class="five-day-forecast-content">
-                        <img src="images/sunnny.jpg" alt="sunny">
-                        <p> 79 &deg;F</p>
-                    </div>
-                </div>
-                <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Sat</div>
-                    <div class="five-day-forecast-content">
-                        <img src="images/sunnny.jpg" alt="sunny">
-                        <p> 91 &deg;F</p>
-                    </div>
-                </div>
-                <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Sun</div>
-                    <div class="five-day-forecast-content">
-                        <img src="images/sunnny.jpg" alt="sunny">
-                        <p> 89 &deg;F</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="article-section" >
-            <img src="https://picsum.photos/100" alt="picture">
-            <h3>Wish You Were Here</h3>
-            <div class="article-author">By: Pink floyd</div>
-  
-                
-            <p lang="en\">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad error laudantium perspiciatis est
-                reprehenderit pariatur recusandae omnis, sequi aliquam molestiae eligendi quaerat magni iure voluptates
-                nulla nemo ratione enim voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Laboriosam, sed. Ut, natus. Velit ipsum reiciendis consequatur quis quo error quos recusandae, facere
-                fugit saepe voluptate optio natus sapiente doloremque non. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quibusdam nesciunt possimus laudantium pariatur labore, necessitatibus nulla quidem
-                fugiat officia aut, culpa doloribus. Deserunt optio aperiam sequi repudiandae quam officiis doloribus.
-            </p>
-        </section>
+                <div>Software Needed</div>
+                <label><input type="checkbox" name="editing" value="yes">Editing</label>
+                <label><input type="checkbox" name="code" value="yes">Coding</label>
+                <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                    <label>Anticipated Completion Date<input type="date" name="completedDate"></label>
+                    <label>Course Subject
+                        <select name="subject">
+                            <option value="software">Software Development<t/option>
+                        </select>
+                    </label>
+            </fieldset>
         <div class="contact-information">
             <div class="contact-map">
                 <img src="images/map.png" alt="map-image">
@@ -141,7 +88,6 @@
                 </div>
             </section>
         </div>
-
     </main>
     <footer>
         &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
@@ -149,7 +95,6 @@
     </footer>
     <script src="js/date.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
 </body>
 
 </html>
