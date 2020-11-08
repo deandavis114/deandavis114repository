@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <meta name="description" content="Course portal for WDD 230">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo-image" src="images/sun.png" alt="sun-image">
+        <div>
+            <h1 class="label-title"> WEATHER DAY </h1>
+            <div class="catch-phrase">All day weather</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="herodiv">
+            <picture class="photoA">
+                <source media="(max-width: 200px)" srcset="images/preston-200.jpg">
+                <source media="(max-width: 500px)" srcset="images/preston-500.jpg">
+                <source media="(max-width: 800px)" srcset="images/preston-800.jpg">
+                <source media="(max-width: 1100px)" srcset="images/preston-1100.jpg">
+                <img src="images/preston.jpeg" alt="preston">
+            </picture>
+            <section class="weathersummary">
+                <h2>Lastest Weather</h2>
+                <div class='flex-container'>
+                    <div class='weather-summary-lables'>
+                        <p>Curently</p>
+                        <p>High:</p>
+                        <p>Wind Chill:</p>
+                        <p>Humidity:</p>
+                        <p>Windspeed:</p>
+                    </div>
+                    <div class='weather-summary-answers'>
+                        <p>Sunny</p>
+                        <p> <span id="temp">76</span>  &deg;F</p>
+                        <p> <span id="windchill"> 65</span> &deg;F</p>
+                        <p>55%</p>
+                        <p> <span id="speed">15</span> mph</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="five-day">
+            <h3>5 day forcast</h3>
+            <div class="five-day-forecast">
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Wed</div>
+                    <div class="five-day-forecast-content">
+                        <img src="images/sunnny.jpg" alt="sunny">
+                        <p> 89 &deg;F</p>
+                    </div>
+                </div>
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Thurs</div>
+                    <div class="five-day-forecast-content">
+                        <img src="images/sunnny.jpg" alt="sunny">
+                        <p> 76 &deg;F</p>
+                    </div>
+                </div>
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Fri</div>
+                    <div class="five-day-forecast-content">
+                        <img src="images/sunnny.jpg" alt="sunny">
+                        <p> 79 &deg;F</p>
+                    </div>
+                </div>
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Sat</div>
+                    <div class="five-day-forecast-content">
+                        <img src="images/sunnny.jpg" alt="sunny">
+                        <p> 91 &deg;F</p>
+                    </div>
+                </div>
+                <div class="five-day-forecast-item">
+                    <div class="five-day-forecast-heading">Sun</div>
+                    <div class="five-day-forecast-content">
+                        <img src="images/sunnny.jpg" alt="sunny">
+                        <p> 89 &deg;F</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article-section" >
+            <img src="https://picsum.photos/100" alt="picture">
+            <h3>Wish You Were Here</h3>
+            <div class="article-author">By: Pink floyd</div>
+  
+                
+            <p lang="en\">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad error laudantium perspiciatis est
+                reprehenderit pariatur recusandae omnis, sequi aliquam molestiae eligendi quaerat magni iure voluptates
+                nulla nemo ratione enim voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Laboriosam, sed. Ut, natus. Velit ipsum reiciendis consequatur quis quo error quos recusandae, facere
+                fugit saepe voluptate optio natus sapiente doloremque non. Lorem ipsum dolor sit amet, consectetur
+                adipisicing elit. Quibusdam nesciunt possimus laudantium pariatur labore, necessitatibus nulla quidem
+                fugiat officia aut, culpa doloribus. Deserunt optio aperiam sequi repudiandae quam officiis doloribus.
+            </p>
+        </section>
+        <div class="contact-information">
+            <div class="contact-map">
+                <img src="images/map.png" alt="map-image">
+            </div>
+            <section class="contact-info-section">
+                <h3>Weather Day</h3>
+                <div class="contact-address">
+                    <div>3000 W 3600 N</div>
+                    <div>Preston, ID 83263</div>
+                    <br>
+                    <div>&#9742; 999-999-9999</div>
+                    <div>&#9993; email@email.com</div>
+                </div>
+                <div class="social-media-icons">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
+        <div id="current-date"></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

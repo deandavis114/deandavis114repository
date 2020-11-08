@@ -1,0 +1,39 @@
+
+@media only screen and (min-width: 35rem) {
+.five-day {
+    display: block;
+ }    
+ .five-day-forecast{
+     margin: 0 auto;
+     display: flex;
+     width: 90%;
+     justify-content: center;
+ }
+ .five-day-forecast-item {
+     border: solid  #15817c;
+     text-align: center;
+ }
+.five-day-forecast-heading{
+    background-color:  #16bbb3;
+    font-weight: bold;
+    padding: 0.5em;
+}
+.five-day-forecast-content {
+    font-weight: bold;
+}
+.five-day-forecast-content img{
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 5px;
+}
+
+.five-day-forecast-content p {
+    margin: 0;
+    padding: 0 0 0.5em;
+ }
+
+ img {
+     max-width: 100%;
+ }
+} 
+
