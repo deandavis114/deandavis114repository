@@ -43,38 +43,41 @@
                <lable>Last Name* <input type="text" name="lname" required></lable>
                <lable>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></lable>
                <lable>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></lable>
-               <lable>Website* <input type="eurl" name="url" placeholder="http://" required></lable>
-            </fieldset>
-            <fieldset>
-                <legend>Course Info</legend> 
-                <div>Audience</div>
-                <lable><input type="radio" name="audience" value="beginner">Beginner</lable>
-                <lable><input type="radio" name="audience" value="beginner">Padawan</lable>
-                <lable><input type="radio" name="audience" value="beginner">Master</lable>
+               <lable>Zip Code* <input type="zip" name="zip" placeholder="#####" required></lable>
+               <lable>Storm Date* <input type="date" required></lable>
 
-                <div>Software Needed</div>
-                <label><input type="checkbox" name="editing" value="yes">Editing</label>
-                <label><input type="checkbox" name="code" value="yes">Coding</label>
-                <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                <label><input type="checkbox" name="client" value="yes">FTP Client</label>
             </fieldset>
             <fieldset>
-                <legend>Funding</legend>
-                    <label>Anticipated Completion Date<input type="date" name="completedDate"></label>
-                    <label>Course Subject
+                <legend>Storm Information</legend> 
+                <div>Storm Type</div> 
+                <label>List<input type="list" ></label>
+                <label>Storm Severity<input type="range" name="severity"></input></label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Location</legend>
+                    <label>Region
                         <select name="subject">
-                            <option value="software">Software Developmentt</option>
-                            <option value="creative">Professional</option>
-                            <option value="info">information technology</option>
-                            <option value="data">data professional</option>
-                            <option value="constructive">construction</option>
-                            <option value="manufacturing">manufacturing</option>
+                            <option value="select" disabled>Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
                         </select>
                     </label>
-                    <label>how many authors<input type="number" name="authors"></input></label>
+
+                <legend>Danger</legend> 
+                    <lable><input type="radio" name="danger" value="yes">yes</lable>
+                    <lable><input type="radio" name="danger" value="no">no</lable>
+                    <lable><input type="radio" name="danger" value="maybe">maybe</lable>
+                <fieldset>
+        
+
+            <fieldset>
+                <input type="submit" value="SEND">
             </fieldset>
-            <input type="submit" value="Propose my application">
         </form>
+
+        
         <div class="contact-information">
             <div class="contact-map">
                 <img src="images/map.png" alt="map-image">
