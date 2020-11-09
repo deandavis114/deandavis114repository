@@ -39,18 +39,18 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-               <lable>First Name* <input type="text" name="fname" required></lable>
-               <lable>Last Name* <input type="text" name="lname" required></lable>
-               <lable>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></lable>
-               <lable>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></lable>
-               <lable>Zip Code* <input type="zip" name="zip" placeholder="#####" required></lable>
-               <lable>Storm Date* <input type="date" required></lable>
+               <label>First Name* <input type="text" name="fname" required></label>
+               <label>Last Name* <input type="text" name="lname" required></label>
+               <label>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></label>
+               <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+               <label>Zip Code* <input type="number" name="zip" placeholder="#####" required></label>
+               <label>Storm Date* <input type="date" required></label>
 
             </fieldset>
             <fieldset>
                 <legend>Storm Information</legend> 
                 <div>Storm Type</div> 
-                <label>List<input type="list" ></label>
+                <label>List<input list=""></label>
                 <label>Storm Severity<input type="range" name="severity"></input></label>
             </fieldset>
                 
@@ -66,18 +66,18 @@
                     </label>
 
                 <legend>Danger</legend> 
-                    <lable><input type="radio" name="danger" value="yes">yes</lable>
-                    <lable><input type="radio" name="danger" value="no">no</lable>
-                    <lable><input type="radio" name="danger" value="maybe">maybe</lable>
-                <fieldset>
+                    <label><input type="radio" name="danger" value="yes">yes</label>
+                    <label><input type="radio" name="danger" value="no">no</label>
+                    <label><input type="radio" name="danger" value="maybe">maybe</label>
+                </fieldset>
         
 
             <fieldset>
-                <input type="submit" value="SEND">
+                <input type="submit" value="Report on This Storm">
             </fieldset>
         </form>
 
-        
+
         <div class="contact-information">
             <div class="contact-map">
                 <img src="images/map.png" alt="map-image">
