@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <meta name="description" content="Course portal for WDD 230">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo-image" src="images/sun.png" alt="sun-image">
+        <div>
+            <h1 class="label-title"> WEATHER DAY </h1>
+            <div class="catch-phrase">All day weather</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Report Weather</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+               <lable>First Name* <input type="text" name="fname" required></lable>
+               <lable>Last Name* <input type="text" name="lname" required></lable>
+               <lable>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></lable>
+               <lable>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></lable>
+               <lable>Website* <input type="eurl" name="url" placeholder="http://" required></lable>
+            </fieldset>
+            <fieldset>
+                <legend>Course Info</legend> 
+                <div>Audience</div>
+                <lable><input type="radio" name="audience" value="beginner">Beginner</lable>
+                <lable><input type="radio" name="audience" value="beginner">Padawan</lable>
+                <lable><input type="radio" name="audience" value="beginner">Master</lable>
+
+                <div>Software Needed</div>
+                <label><input type="checkbox" name="editing" value="yes">Editing</label>
+                <label><input type="checkbox" name="code" value="yes">Coding</label>
+                <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                    <label>Anticipated Completion Date<input type="date" name="completedDate"></label>
+                    <label>Course Subject
+                        <select name="subject">
+                            <option value="software">Software Developmentt</option>
+                            <option value="creative">Professional</option>
+                            <option value="info">information technology</option>
+                            <option value="data">data professional</option>
+                            <option value="constructive">construction</option>
+                            <option value="manufacturing">manufacturing</option>
+                        </select>
+                    </label>
+                    <label>how many authors<input type="number" name="authors"></input></label>
+            </fieldset>
+            <input type="submit" value="Propose my application">
+        </form>
+        <div class="contact-information">
+            <div class="contact-map">
+                <img src="images/map.png" alt="map-image">
+            </div>
+            <section class="contact-info-section">
+                <h3>Weather Day</h3>
+                <div class="contact-address">
+                    <div>3000 W 3600 N</div>
+                    <div>Preston, ID 83263</div>
+                    <br>
+                    <div>&#9742; 999-999-9999</div>
+                    <div>&#9993; email@email.com</div>
+                </div>
+                <div class="social-media-icons">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
+        <div id="current-date"></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
