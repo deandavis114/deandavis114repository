@@ -39,7 +39,7 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Applicant Information</legend>
-               <label>First Name* <input type="text" name="fname" required></label>
+               <label>First Name* <input type="text" name="name" pattern="(\w| ){5,}" required></label>
                <label>Last Name* <input type="text" name="lname" required></label>
                <label>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></label>
                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
