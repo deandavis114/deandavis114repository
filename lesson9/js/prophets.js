@@ -16,14 +16,14 @@ fetch(requestURL)
             let p_birthday = document.createElement("p")
             
             h2.textContent = prophets[i].name + ' ' + prophets[i].lastname;
-            img.setAttribute('src',prophets[i].imageurl);
             p.textContent = prophets[i].birthdate;
             p2.textContent = prophets[i].birthplace;
+            img.setAttribute('src',prophets[i].imageurl);
 
             card.appendChild(h2);
-            card.appendChild(img);
             card.appendChild(p);
             card.appendChild(p2);
+            card.appendChild(img);
 
 
             document.querySelector('div#cards').appendChild(card);

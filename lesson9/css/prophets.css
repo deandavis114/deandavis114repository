@@ -1,8 +1,18 @@
+
+
 section {
-    padding: 1em;
-    background-color: blueviolet;
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    background-color: rgb(112, 119, 180);
+    padding-bottom: 1em;
+    border: 10px solid white;
+    
 }
+
 
 #cards img {
     max-width: 100%;
+    box-shadow: 10px solid black;
 }
