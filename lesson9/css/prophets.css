@@ -1,0 +1,8 @@
+section {
+    padding: 1em;
+    background-color: blueviolet;
+}
+
+#cards img {
+    max-width: 100%;
+}
