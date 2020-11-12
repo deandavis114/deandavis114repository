@@ -11,6 +11,10 @@ section {
     
 }
 
+section h2 {
+    color: black;
+    text-shadow: 2px solid black;
+}
 
 #cards img {
     max-width: 100%;
