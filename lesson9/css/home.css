@@ -1,9 +1,12 @@
 
+/*----- Small View -----*/
 
-@media only screen and (min-width: 64rem) {
+/*----- Medium View -----*/
+@media screen and (min-width: 760px) {
+
+}
+/*----- Large View -----*/
+@media screen and (min-width: 1060px) {
 
 }
 
-@media only screen and (min-width: 35rem) {
-
-}
