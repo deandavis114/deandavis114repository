@@ -1,12 +1,62 @@
 
 /*----- Small View -----*/
+section {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+    background-color: rgb(112, 119, 180);
+    padding-bottom: 1em;
+    border: 10px solid white;
+    
+}
+
+section h2 {
+    color: black;
+    text-shadow: 2px solid black;
+}
+
+#cards img {
+    max-width: 100%;
+}
+
 
 /*----- Medium View -----*/
 @media screen and (min-width: 760px) {
+    h2 {text-align:center;}
 
+    section {
+	max-width: 600px;
+    margin: .5rem auto;
+	border:1px solid #bbb;
+    background-color: #eee;
 }
+
+    article {
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+    article:nth-child(odd) img {
+	grid-column: 2;
+}
+
+    article:nth-child(odd) .data {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+    img {width: 100%; height: auto;padding:0;}
+    #data1 {background-color:#000; color:#fff;}
+    p {padding: .75rem;}
+}
+
+
 /*----- Large View -----*/
 @media screen and (min-width: 1060px) {
-
+    #data1{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1rf;
+    }
 }
 

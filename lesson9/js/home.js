@@ -1,11 +1,11 @@
 
 const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
-fetch(requestURL)
+fetch(requestURL) 
     .then(function(response){
         return response.json();
     })
-    .then(function(jsonObject){
-        console.table(jsonObject);
+    .then(function(jsonObject){      
+        console.log(jsonObject);
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
             let card = document.createElement('section');
@@ -18,11 +18,12 @@ fetch(requestURL)
            
             
             h2.textContent = towns[i].name;
-            p.textContent = 'moto'+ ':'+ ' ' + towns[i].motto;
+            p.textContent = 'Moto'+ ':'+ ' ' + towns[i].motto;
             p1.textContent = 'Year Founded' + ' ' + towns[i].yearFounded;
-            p2.textContent = 'population' + ' ' + towns[i].currentPopulation;
+            p2.textContent = 'Population' + ' ' + towns[i].currentPopulation;
             p3.textContent = 'Annual Rain Fall' +' ' + towns[i].averageRainfall;
-            img.setAttribute('src',towns[i].imageurl);
+            img.setAttribute('src',towns[i].photo);
+
 
             card.appendChild(h2);
             card.appendChild(p);
