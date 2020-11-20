@@ -34,8 +34,9 @@ fetch(requestUrl)
         // Insert the weather icon on the page
         //"https://openweathermap.org/img/w/04d.png"
         const imageBase= "https://openweathermap.org/img/w/";
-        let icon = response.weather.icon + ".png";
+        let icon = response.weather[0].icon + ".png";
         let imageSrcUrl = imageBase + icon; 
 
-
+        console.log(imageSrcUrl);
+        document.getElementById("icon").setAttribute('src', imageSrcUrl);
     });
