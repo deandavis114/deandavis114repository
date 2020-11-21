@@ -3,7 +3,7 @@
     "message": 0,
     "cnt": 40,
     "list": [{
-        "dt": 1605916800,
+        "dt": 1605916800, //seconds in unix time (Note: Javascript uses milliseconds)
         "main": {
             "temp": 39.97,
             "feels_like": 33.13,
