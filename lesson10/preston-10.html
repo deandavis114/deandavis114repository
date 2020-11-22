@@ -55,11 +55,11 @@
                         <p>Windspeed:</p>
                     </div>
                     <div class='weather-summary-answers'>
-                        <p>Sunny</p>
-                        <p> <span id="temp">76</span>  &deg;F</p>
-                        <p> <span id="windchill"> 65</span> &deg;F</p>
-                        <p>55%</p>
-                        <p> <span id="speed">15</span> mph</p>
+                        <p id="description">Sunny</p>
+                        <p> <span id="temp_high">76</span>  &deg;F</p>
+                        <p> <span id="windchill_now"> 65</span> &deg;F</p>
+                        <p id="humidity_now">55%</p>
+                        <p> <span id="speed_now">15</span> mph</p>
                     </div>
                 </div>
             </section>
@@ -69,35 +69,35 @@
             <h3>5 day forcast</h3>
             <div class="five-day-forecast">
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Wed</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek1">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img src="images/sunnny.jpg" alt="sunny">
                         <p> 89 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Thurs</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek2">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img src="images/sunnny.jpg" alt="sunny">
                         <p> 76 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Fri</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek3">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img src="images/sunnny.jpg" alt="sunny">
                         <p> 79 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Sat</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek4">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img src="images/sunnny.jpg" alt="sunny">
                         <p> 91 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading">Sun</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek5">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img src="images/sunnny.jpg" alt="sunny">
                         <p> 89 &deg;F</p>
@@ -147,7 +147,6 @@
     </footer>
     <script src="js/date.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
     <script src="js/weather.js"></script>
 </body>
 
