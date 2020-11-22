@@ -1,5 +1,5 @@
 const apiKey  = "de8e234434351321aacbcad506c213dd";
-let url       = "http://api.openweathermap.org/data/2.5/";
+let url       = "https://api.openweathermap.org/data/2.5/";
 let method    = "weather";
 let cityId    = "5604473";
 let units     = "imperial";
