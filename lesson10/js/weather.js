@@ -1,8 +1,7 @@
-
-const apiKey  = "de8e234434351321aacbcad506c213dd";
+const apiKey = "de8e234434351321aacbcad506c213dd";
 const baseurl = "https://api.openweathermap.org/data/2.5/forecast";
-let cityId    = "5604473";
-let units     = "imperial";
+let cityId = "5604473";
+let units = "imperial";
 
 
 
@@ -21,7 +20,7 @@ fetch(requestUrl)
     .then(data => {
         // Parse the JASON stuff
 
-       
+
         let real_description = data.list[1].weather[0].description;
         document.getElementById('description').innerText = real_description;
 
@@ -30,10 +29,10 @@ fetch(requestUrl)
 
         let real_windchill = data.list[3].wind.deg;
         document.getElementById('windchill_now').innerText = real_windchill;
-       
+
         let real_humidity = data.list[0].main.humidity;
         document.getElementById('humidity_now').innerText = real_humidity;
-       
+
 
         let real_wind_speed = data.list[3].wind.speed;
         document.getElementById('speed_now').innerText = real_wind_speed;
@@ -46,27 +45,26 @@ fetch(requestUrl)
         let forecast_dow = document.querySelectorAll('.forecast-day .dow');
         let list = data.list;
         const DOW = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
-        let count = 5 
-        for(item of list){
-            if(item.dt_txt.includes('18:00:00')){
+        let count = 1
+        for (item of list) {
+            if (item.dt_txt.includes('18:00:00')) {
                 let date = new Date(item.dt * 1000);
-                if (count == 5) {
-                    document.getElementById('DayOfWeek1').innerText = DOW[date.getDay()];
-                }
-                if (count == 4) {
-                    document.getElementById('DayOfWeek2').innerText = DOW[date.getDay()];
-                }
-                if (count == 3) {
-                    document.getElementById('DayOfWeek3').innerText = DOW[date.getDay()];
-                }
-                if (count == 2) {
-                    document.getElementById('DayOfWeek4').innerText = DOW[date.getDay()];
-                }
-                if (count == 1) {
-                    document.getElementById('DayOfWeek5').innerText = DOW[date.getDay()];
-                }
-                //date.getDay
-                count = count-1
+                let dayNumber = date.getDay();
+                let dayname = DOW[dayNumber];
+                console.log(dayNumber, dayname);
+                document.getElementById('DayOfWeek' + count).innerText = dayname;
+
+                let tempurature = item.main.temp;
+                document.getElementById('temp-' + count).innerText = tempurature;
+
+                //"https://openweathermap.org/img/w/04d.png"
+                const imageBase = "https://openweathermap.org/img/w/";
+                let symbol = item.weather[0].icon + ".png";
+                let imageSrcUrl = imageBase + symbol;
+
+                document.getElementById('symbol-' + count).setAttribute('src', imageSrcUrl);
+
+                count = count + 1;
             }
         }
 
