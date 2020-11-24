@@ -44,16 +44,16 @@ fetch(requestUrl)
 
 
 
-const baseurl5day = "https://api.openweathermap.org/data/2.5/forecast";
+//const baseurl5day = "https://api.openweathermap.org/data/2.5/forecast";
 //"https://api.openweathermap.org/data/2.5/forecast?id={city ID}&appid={API key}"
 
-let requestUrl5day = baseurl5day + "?" +
-    "id=" + cityId +
-    "&appid=" + apiKey +
-    "&units=" + units;
+//let requestUrl5day = baseurl5day + "?" +
+    //"id=" + cityId +
+    // "&appid=" + apiKey +
+    // "&units=" + units;
 
-// let requestUrl = "https://"https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=de8e234434351321aacbcad506c213dd&units="imperial"
-console.log(requestUrl);
+let requestUrl5day = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=de8e234434351321aacbcad506c213dd&units=imperial"
+console.log(requestUrl5day)
 
 fetch(requestUrl5day)
     .then(response => response.json())
