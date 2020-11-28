@@ -20,9 +20,9 @@ fetch(requestURL)
 
                 h2.textContent = towns[i].name;
                 p.textContent = 'Moto' + ':' + ' ' + towns[i].motto;
-                p1.textContent = 'Year Founded' + ' ' + towns[i].yearFounded;
-                p2.textContent = 'Population' + ' ' + towns[i].currentPopulation;
-                p3.textContent = 'Annual Rain Fall' + ' ' + towns[i].averageRainfall;
+                p1.textContent = 'Year Founded' + ":" + ' ' + towns[i].yearFounded;
+                p2.textContent = 'Population' + ":" + ' ' + towns[i].currentPopulation;
+                p3.textContent = 'Annual Rain Fall' + ":" + ' ' + towns[i].averageRainfall;
                 /*img.setAttribute('src', 'images/' + towns[i].photo);*/
                 img.setAttribute('src', 'images/fishhaven.jpg');
 
