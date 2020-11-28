@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gallery Photos</title>
+        <meta name="description" content="Course portal for WDD 230">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+
+<style>
+
+.gallery-title {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 1em;
+}
+
+.gallery {
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 1rem;
+}
+
+.grid-item{
+    border: 1px solid black;
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+.grid-item p {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #555;
+}
+
+@media screen and (min-width: 760px) {
+    .gallery-title {
+    display: grid;
+    justify-items: center;
+}
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .gallery-title {
+    display: grid;
+    justify-items: center;
+}
+    
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-item:hover {
+       box-shadow: 3px 5px black;
+
+    }
+}
+
+</style>
+
+
+</head>
+
+<body>
+    <header>
+        <img class="logo-image" src="images/sun.png" alt="sun-image">
+        <div>
+            <h1 class="label-title"> WEATHER DAY </h1>
+            <div class="catch-phrase">All day weather</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="home.html">Home</a></li>
+            <li ><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+       <section>
+           <h2 class="gallery-title">Picture Gallery</h2>
+            <div class="gallery">
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/redstorm.jpg" alt="test image">
+                    <p>Storm Over The Ocean</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/noaa.jpg" alt="test image">
+                    <p>NOAA</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/sunnyday.jpg" alt="test image">
+                    <p>Good Morning</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/rainbow.jpg" alt="test image">
+                    <p>Rainbow</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/dramatic_sky.jpg" alt="test image">
+                    <p>Dramatic Sky</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/hurrican.jpg" alt="test image">
+                    <p>Hurrican</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/snowy&cloudy.jpg" alt="test image">
+                    <p>Snowy & Cloudy</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/lightning.jpg" alt="test image">
+                    <p>Lightning</p>
+                </div>
+                <div class="grid-item">
+                    <img src="images/placeholder.jpg" data-src="images/rain.jpg" alt="test image">
+                    <p>Peaceful Rain</p>
+                </div>
+            </div>
+
+
+       </section>
+    </main>
+    <footer>
+        &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
+        <div id="current-date"></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/gallerylazyload.js"></script>
+</body>
+
+</html>

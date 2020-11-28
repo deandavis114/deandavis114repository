@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Site</title>
+    <meta name="description" content="Course portal for WDD 230">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo-image" src="images/sun.png" alt="sun-image">
+        <div>
+            <h1 class="label-title"> WEATHER DAY </h1>
+            <div class="catch-phrase">All day weather</div>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="#">Home</a></li>
+            <li ><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stromcenter.html">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Report Weather</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+               <label>First Name* <input type="text" name="name" pattern="(\w| ){5,}" required></label>
+               <label>Last Name* <input type="text" name="lname" required></label>
+               <label>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></label>
+               <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+               <label>Zip Code* <input type="number" name="zip" placeholder="#####" required></label>
+               <label>Storm Date* <input type="date" required></label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend> 
+                <div>Storm Type</div> 
+                <label>List<input list=""></label>
+                <label>Storm Severity<input type="range" name="severity"></input></label>
+            </fieldset>
+                
+            <fieldset>
+                <legend>Location</legend>
+                    <label>Region
+                        <select name="subject">
+                            <option value="select" disabled>Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                    </label>
+
+                <legend>Danger</legend> 
+                    <label><input type="radio" name="danger" value="yes">yes</label>
+                    <label><input type="radio" name="danger" value="no">no</label>
+                    <label><input type="radio" name="danger" value="maybe">maybe</label>
+                </fieldset>
+        
+
+            <fieldset>
+                <input type="submit" value="Report on This Storm">
+            </fieldset>
+        </form>
+
+
+        <div class="contact-information">
+            <div class="contact-map">
+                <img src="images/map.png" alt="map-image">
+            </div>
+            <section class="contact-info-section">
+                <h3>Weather Day</h3>
+                <div class="contact-address">
+                    <div>3000 W 3600 N</div>
+                    <div>Preston, ID 83263</div>
+                    <br>
+                    <div>&#9742; 999-999-9999</div>
+                    <div>&#9993; email@email.com</div>
+                </div>
+                <div class="social-media-icons">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                    <img src="#" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
+        <div id="current-date"></div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
