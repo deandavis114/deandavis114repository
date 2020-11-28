@@ -16,6 +16,7 @@ fetch(requestURL)
                 let p2 = document.createElement("p");
                 let p3 = document.createElement("p");
                 let img = document.createElement("img");
+                
 
 
                 h2.textContent = towns[i].name;
@@ -24,10 +25,12 @@ fetch(requestURL)
                 p2.textContent = 'Population' + ":" + ' ' + towns[i].currentPopulation;
                 p3.textContent = 'Annual Rain Fall' + ":" + ' ' + towns[i].averageRainfall;
                 /*img.setAttribute('src', 'images/' + towns[i].photo);*/
-                img.setAttribute('src', 'images/fishhaven.jpg');
+                img.setAttribute('src', 'images/dramatic_sky.jpg');
+               
+
 
                 let d = document.createElement ('div'); 
-
+                
                 
 
                 d.appendChild(h2);
@@ -38,7 +41,8 @@ fetch(requestURL)
                 card.appendChild(d);
 
                 card.appendChild(img);
-
+                
+                
 
                 document.querySelector('div#data1').appendChild(card);
             }
