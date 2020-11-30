@@ -5,7 +5,10 @@
 
     nav ul.hide {display:flex;}
 
-    nav ul {margin-left: 2%;}
+    nav ul {
+        margin-left: 2%;
+        display: flex;
+    }
 
     nav ul li a {
         border: none;
