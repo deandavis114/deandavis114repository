@@ -11,10 +11,10 @@ if (cityname == 'Preston'){
     cityId = '5604473';
 }
 else if ( cityname == 'Soda Springs') {
-    cityId = '7535661';
+    cityId = '5607916';
 }
 else if ( cityname == 'Fish Haven') {
-    cityId = '3530597';
+    cityId = '5605242';
 }
 
 
