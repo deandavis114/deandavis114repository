@@ -171,15 +171,32 @@ picture.photoA {
  
  .five-day {
     display: none;
+    padding: 2em;
  }
  
- .article-section {
-    background-color: var(--alternate-color-1-tint);
+ .title-title {
+    text-align: center;
+    padding: 1em;
+ }
+
+ .article-section{
+     background-color:#c6e7e6;
+     
+ }
+
+ .article-section p{
+     padding: 1.5em;
+ }
+
+ .article-title {
+     text-align: center;
+     padding: 1em;
  }
  
  .article-author {
     text-align: center;
-    color: var(--alternate-color-2);
+    padding: 0.5em;
+    /* color: var(--alternate-color-2); */
  }
  
  .article-section img {
@@ -187,11 +204,10 @@ picture.photoA {
     float: right;
  }
  
- 
  a {
     color: var(--primary-color);
     text-decoration: none;
- }
+ }s
  
  a:visited {
     color: var(--alternate-color-1);
