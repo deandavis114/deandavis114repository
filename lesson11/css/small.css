@@ -184,6 +184,7 @@ picture.photoA {
  
  .article-section img {
     box-shadow: 0 0 20px #111;
+    float: right;
  }
  
  
