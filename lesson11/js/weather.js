@@ -36,7 +36,7 @@ fetch(requestUrl)
         document.getElementById('description').innerText = real_description;
 
         let real_high_temp = data.main.temp_max;
-        document.getElementById('temp_high').innerText = real_high_temp;
+        document.getElementById('temp_high').innerHTML = real_high_temp.toFixed(0);
 
         let real_humidity = data.main.humidity;
         document.getElementById('humidity_now').innerText = real_humidity;
@@ -88,7 +88,7 @@ fetch(requestUrl5day)
                 document.getElementById('DayOfWeek' + count).innerText = dayname;
 
                 let tempurature = item.main.temp;
-                document.getElementById('temp-' + count).innerText = tempurature;
+                document.getElementById('temp-' + count).innerHTML = tempurature.toFixed(0) + "&deg;F";
 
                 //"https://openweathermap.org/img/w/04d.png"
                 const imageBase = "https://openweathermap.org/img/w/";
