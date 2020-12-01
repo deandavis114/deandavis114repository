@@ -1,19 +1,23 @@
-
 /*----- Small View -----*/
 section {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 1rem;
-    background-color:#c5d6d6;
+    background-color: #c5d6d6;
     padding-bottom: 1em;
     border: 10px solid white;
-    
+
 }
 
 section h2 {
     color: black;
+    padding: 1rem;
     /* text-shadow: 2px solid black; */
+}
+
+section p {
+    padding: .5rem;
 }
 
 #data1 img {
@@ -24,49 +28,81 @@ section h2 {
 /*----- Medium View -----*/
 @media screen and (min-width: 760px) {
     h2 {
-        text-align:center;
+        text-align: center;
         padding: 1rem;
     }
 
     div#data1 {
-	max-width: 600px;
-    margin: .5rem auto;
-	border: 1px solid #bbb;
-    background-color: #c6e7e6;
-}
+        max-width: 600px;
+        margin: .5rem auto;
+        border: 1px solid #bbb;
+        background-color: #c6e7e6;
+    }
 
     section {
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-}
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 
     section:nth-child(odd) img {
-	grid-column: 1;
-}
+        grid-column: 1;
+    }
 
     section:nth-child(odd) div {
-	grid-column: 2;
-	grid-row: 1;
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        padding: 1em;
+    }
+
+    #data1 {
+        background-color: #000;
+    }
+
+    p {
+        padding: .75rem;
+    }
 }
 
-    img {width: 100%; height: auto;padding:0;}
-    #data1 {background-color:#000; }
-    p {padding: .75rem;}
+/* this is for the article and banner */
+
+.home_banner_div {
+    background-color: #c5d6d6;
+    padding: 1em;
 }
 
+.home_banner_div h3 {
+    padding: 1em;
+}
 
 /*----- Large View -----*/
 @media screen and (min-width: 1060px) {
-    div#data1{
+    div#data1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 100%;
     }
-    section{
+
+    section {
         display: block;
     }
+
     p {
         padding-bottom: 10px;
     }
-}
 
+    /* this is for the article and banner */
+
+    .home_banner_div {
+        background-color: #c5d6d6;
+        padding: 1em;
+    }
+
+    .home_banner_div h3 {
+        padding: 1em;
+    }
+}
