@@ -5,7 +5,7 @@ section {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 1rem;
-    background-color: rgb(112, 119, 180);
+    background-color:#c6e7e6;
     padding-bottom: 1em;
     border: 10px solid white;
     
@@ -32,7 +32,7 @@ section h2 {
 	max-width: 600px;
     margin: .5rem auto;
 	border: 1px solid #bbb;
-    background-color: #eee;
+    background-color: #c6e7e6;
 }
 
     section {
@@ -50,7 +50,7 @@ section h2 {
 }
 
     img {width: 100%; height: auto;padding:0;}
-    #data1 {background-color:#000; color:#fff;}
+    #data1 {background-color:#000; }
     p {padding: .75rem;}
 }
 
