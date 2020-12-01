@@ -223,17 +223,17 @@ picture.photoA {
     box-shadow: 0 0 20px #111;
     float: right;
  } 
-  */
- */
+
  
- a {
+ 
+  a {
     color: var(--primary-color);
     text-decoration: none;
- }s
+ }s 
  
- a:visited {
+  a:visited {
     color: var(--alternate-color-1);
- }
+ } */
  
 
 
