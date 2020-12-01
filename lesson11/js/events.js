@@ -7,8 +7,6 @@ fetch(requestURL)
     })
     .then(function (jsonObject) {
         let towns = jsonObject.towns
-        console.log(towns)
-        console.log(cityname)
         for (let i = 0; i < towns.length; i++) {
             if (towns[i].name == cityname) {
                 let events = towns[i].events;

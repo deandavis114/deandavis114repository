@@ -4,7 +4,6 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.log(jsonObject);
         const towns = jsonObject['towns'];
         for (let i = 0; i < towns.length; i++) {
 
@@ -24,7 +23,7 @@ fetch(requestURL)
                 p2.textContent = 'Population'+ ':'  + ' ' + towns[i].currentPopulation;
                 p3.textContent = 'Annual Rain Fall'+ ':'  + ' ' + towns[i].averageRainfall;
                 /*img.setAttribute('src', 'images/' + towns[i].photo);*/
-                img.setAttribute('src', 'images/fishhaven.jpg');
+                img.setAttribute('src', 'images/rainbow.jpg');
 
                 let d = document.createElement ('div'); 
 
