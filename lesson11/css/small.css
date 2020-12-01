@@ -194,16 +194,35 @@ picture.photoA {
      padding: 1em;
  }
  
- .article-author {
+.article-author {
     text-align: center;
     padding: 0.5em;
-    /* color: var(--alternate-color-2); */
+    
  }
- 
- .article-section img {
+
+ .article-section {
+    padding: 1.5rem;
+    overflow: auto;
+
+}
+
+.article-section img {
+    float: right;
+    width: auto;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+
+
+ /* .article-section img {
     box-shadow: 0 0 20px #111;
     float: right;
- }
+ } 
+  */
+ */
  
  a {
     color: var(--primary-color);
@@ -222,8 +241,8 @@ picture.photoA {
   /* CONTACT INFORMATION AND MAP  */
   /* CONTACT INFORMATION AND MAP  */
 
- .contact-map {
-   
+ .contact-map img {
+   width: 100%;
  }
  
 .contact-information {
@@ -271,3 +290,6 @@ footer {
     height: 4rem;
 }
 
+#eventsection {
+    background-color: blue;
+}
