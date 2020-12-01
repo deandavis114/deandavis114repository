@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fish Haven</title>
+    <title>Weather Site</title>
     <meta name="description" content="Course portal for WDD 230">
     <link rel="shortcut icon" href="favicon.ico">
     <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
@@ -34,6 +34,8 @@
         </ul>
     </nav>
 
+
+
     <main>
         <h2><span id="cityname">Fish Haven</span>, Idaho</h2>
         <div class="herodiv">
@@ -42,7 +44,7 @@
                 <source media="(max-width: 500px)" srcset="images/fish_haven_banner-500.jpg">
                 <source media="(max-width: 800px)" srcset="images/fish_haven_banner-800.jpg">
                 <source media="(max-width: 1100px)" srcset="images/fish_haven_banner-1100.jpg">
-                <img src="images/fish_haven_banner.jpg" alt="fish_haven_banner">
+                <img src="images/fish_haven_banner.jpg" alt="fish_haven">
             </picture>
             <section class="weathersummary">
                 <h2>Lastest Weather</h2>
@@ -55,11 +57,11 @@
                         <p>Windspeed:</p>
                     </div>
                     <div class='weather-summary-answers'>
-                        <p id="description">FH_wrong</p>
-                        <p> <span id="temp_high">FH_wrong</span>  &deg;F</p>
-                        <p> <span id="windchill_now">FH_wrong</span> &deg;F</p>
-                        <p id="humidity_now">FH_wrong</p>
-                        <p> <span id="speed_now">FH_wrong</span> mph</p>
+                        <p id="description">Sunny</p>
+                        <p> <span id="temp_high">76</span> &deg;F</p>
+                        <p> <span id="windchill_now"> 65</span> &deg;F</p>
+                        <p id="humidity_now">55%</p>
+                        <p> <span id="speed_now">15</span> mph</p>
                     </div>
                 </div>
             </section>
@@ -69,35 +71,35 @@
             <h3 class="title-title">5 day forcast</h3>
             <div class="five-day-forecast">
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading" id="DayOfWeek1">FH_wrong</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek1">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img id="symbol-1" alt="sunny">
                         <p id="temp-1"> 89 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading" id="DayOfWeek2">FH_wrong</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek2">Wrong</div>
                     <div class="five-day-forecast-content">
-                        <img id="symbol-2"  alt="sunny">
+                        <img id="symbol-2" alt="sunny">
                         <p id="temp-2"> 76 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading" id="DayOfWeek3">FH_wrong</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek3">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img id="symbol-3" alt="sunny">
                         <p id="temp-3"> 79 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading" id="DayOfWeek4">FH_wrong</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek4">Wrong</div>
                     <div class="five-day-forecast-content">
-                        <img id="symbol-4"  alt="sunny">
+                        <img id="symbol-4" alt="sunny">
                         <p id="temp-4"> 91 &deg;F</p>
                     </div>
                 </div>
                 <div class="five-day-forecast-item">
-                    <div class="five-day-forecast-heading" id="DayOfWeek5">FH_wrong</div>
+                    <div class="five-day-forecast-heading" id="DayOfWeek5">Wrong</div>
                     <div class="five-day-forecast-content">
                         <img id="symbol-5" alt="sunny">
                         <p id="temp-5"> 89 &deg;F</p>
@@ -105,41 +107,49 @@
                 </div>
             </div>
         </section>
-        <section class="article-section" >
-            <h3 class="article-title">Wish You Were Here</h3>
-            <div class="article-author">By: Pink floyd</div>
-            <img src="https://picsum.photos/100" alt="picture">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad error laudantium perspiciatis est
-                reprehenderit pariatur recusandae omnis, sequi aliquam molestiae eligendi quaerat magni iure voluptates
-                nulla nemo ratione enim voluptatum? Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Laboriosam, sed. Ut, natus. Velit ipsum reiciendis consequatur quis quo error quos recusandae, facere
-                fugit saepe voluptate optio natus sapiente doloremque non. Lorem ipsum dolor sit amet, consectetur
-                adipisicing elit. Quibusdam nesciunt possimus laudantium pariatur labore, necessitatibus nulla quidem
-                fugiat officia aut, culpa doloribus. Deserunt optio aperiam sequi repudiandae quam officiis doloribus.
-            </p>
-        </section>
-        <div class="contact-information">
-            <div class="contact-map">
-                <img src="images/mappreston.jpg" alt="map-image">
+        <section class="article-section">
+            <picture>
+                <img src="images/prestonsquareimage.jpg" alt="picture">
+            </picture>
+            <div class="article-section-div">
+                <h3>
+                    Fishing is here
+                </h3>
+                <p class="article-section-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+                    officia, impedit saepe ipsum
+                    earum
+                    consequatur ab rem, neque ad velit hic doloremque alias quae magnam cum inventore et odit
+                    voluptates.
+                </p>
             </div>
-            <section class="contact-info-section">
-                <h3>Weather Day</h3>
-                <div class="contact-address">
-                    <div>3000 W 3600 N</div>
-                    <div>Preston, ID 83263</div>
-                    <br>
-                    <div>&#9742; 999-999-9999</div>
-                    <div>&#9993; email@email.com</div>
-                </div>
-                <div class="social-media-icons">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                </div>
-            </section>
-        </div>
+        </section>
 
+        <section>
+            <div id='eventsection'></div>
+        </section>
+
+        <section>
+            <div class="contact-information">
+                <div class="contact-map">
+                    <img src="images/mappreston.jpg" alt="map-image">
+                </div>
+                <section class="contact-info-section">
+                    <h3>Weather Day</h3>
+                    <div class="contact-address">
+                        <div>3000 W 3600 N</div>
+                        <div>Preston, ID 83263</div>
+                        <br>
+                        <div>&#9742; 999-999-9999</div>
+                        <div>&#9993; email@email.com</div>
+                    </div>
+                    <div class="social-media-icons">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                        <img src="#" alt="">
+                    </div>
+                </section>
+            </div>
     </main>
     <footer>
         &copy; <span id="copyrightyear"></span> | The Weather Site | Idaho
@@ -148,6 +158,7 @@
     <script src="js/date.js"></script>
     <script src="js/navmenu.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/events.js" ></script>
 </body>
 
 </html>
