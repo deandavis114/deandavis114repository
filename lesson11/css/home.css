@@ -18,6 +18,7 @@ section h2 {
 
 section p {
     padding: .5rem;
+    text-align: center;
 }
 
 #data1 img {
