@@ -13,7 +13,7 @@ section {
 
 section h2 {
     color: black;
-    text-shadow: 2px solid black;
+    /* text-shadow: 2px solid black; */
 }
 
 #data1 img {
@@ -23,12 +23,15 @@ section h2 {
 
 /*----- Medium View -----*/
 @media screen and (min-width: 760px) {
-    h2 {text-align:center;}
+    h2 {
+        text-align:center;
+        padding: 1rem;
+    }
 
     div#data1 {
 	max-width: 600px;
     margin: .5rem auto;
-	border:1px solid #bbb;
+	border: 1px solid #bbb;
     background-color: #eee;
 }
 
