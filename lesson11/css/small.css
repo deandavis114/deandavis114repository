@@ -172,7 +172,8 @@ picture.photoA {
  
  .five-day {
     display: none;
-    padding: 2em;
+    margin: 1em;
+    padding: 1em;
  }
  
  .title-title {
@@ -207,6 +208,7 @@ picture.photoA {
 }
 
 .article-section img {
+    padding: 1em;
     float: right;
     width: auto;
     margin-right: 1rem;
@@ -243,10 +245,11 @@ picture.photoA {
 
  .contact-map img {
    width: 100%;
+   
  }
  
 .contact-information {
-    margin: 1em;
+    margin-top: 1em;
     padding: 1em;
 }
 
@@ -290,6 +293,19 @@ footer {
     height: 4rem;
 }
 
+#events-title {
+    background-color: #c6e7e6;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+
+}
+
 #eventsection {
-    background-color: blue;
+    background-color: #c6e7e6;
+    text-align: center;
+    padding: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
 }
