@@ -1,6 +1,3 @@
-
-
-
 /*----- Clearfix: Force an Element not to collapse -----*/
 
 
@@ -9,13 +6,13 @@
     content: "";
     display: table;
     clear: both;
-  }
+}
 
 
 /*here we are moving on to other things*/
 
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -27,14 +24,14 @@ body {
     font-family: 'ABeeZee', 'Times New Roman', Times, serif;
 }
 
-header, 
-main, 
+header,
+main,
 footer {
     padding: 1em 2em;
 }
 
 header {
-    background-color:  #f5c453;   
+    background-color: #f5c453;
 }
 
 
@@ -42,16 +39,24 @@ header {
 
 /*NAVIGATION BAR*/
 
-nav{
+nav {
 
     text-align: center;
     box-shadow: 2px 2px 15px gray;
 }
+
 /*here is the navigation code copied from the exercise*/
 
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 nav button {
     margin: .2rem 2%;
@@ -61,12 +66,12 @@ nav button {
     color: #555;
 }
 
-nav { 
+nav {
     background-color: #CCC;
     font-family: verdana, sans-serif;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -78,14 +83,21 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     color: #000;
-    border-top: solid rgba(0,0,0,0.3);
+    border-top: solid rgba(0, 0, 0, 0.3);
 }
 
-nav ul li a:hover {background-color: rgba(0,0,0,0.4);}
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
-nav ul li.active a{background-color: rgba(0,0,0,0.2); color: #fff}
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff
+}
 
-nav ul.hide {display: none}
+nav ul.hide {
+    display: none
+}
 
 
 /*_______________________________________*/
@@ -97,7 +109,7 @@ nav ul.hide {display: none}
     max-width: 80px;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
@@ -105,10 +117,10 @@ h2{
     margin: 10px auto;
     position: relative;
     width: 100%;
-    max-width: 960px;     
+    max-width: 960px;
 }
 
-.herodiv img{
+.herodiv img {
     max-width: 100%;
 }
 
@@ -123,16 +135,18 @@ picture.photoA {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: radial-gradient(rgb(231, 226, 178),#f5c453);
+    background: radial-gradient(rgb(231, 226, 178), #f5c453);
     border: 1px solid #f5c453;
     padding: .5rem;
     box-shadow: 0 0 30px #777;
 }
-.flex-container{
+
+.flex-container {
     display: flex;
 }
+
 /*FIVE DAY FORCAST*/
-.weather-summary{
+.weather-summary {
     position: absolute;
     top: 5%;
     left: 5%;
@@ -145,7 +159,7 @@ picture.photoA {
     padding: 0.8rem;
 }
 
-.weather-summary h2{
+.weather-summary h2 {
     color: var(--background-color);
     font-size: 1.5em;
 }
@@ -153,55 +167,55 @@ picture.photoA {
 .weather-summary-labels {
     text-align: right;
     padding: 0 1em 0 0;
- }
- 
- .weather-summary p {
+}
+
+.weather-summary p {
     margin: 0;
     padding: 0.25em 0;
     font-weight: bold;
- }
- 
- .weather-summary-answers p {
-    color: var(--accent-color);
- }
+}
 
- .weather-summary h2 {
+.weather-summary-answers p {
+    color: var(--accent-color);
+}
+
+.weather-summary h2 {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     margin: 0 0 0.5em;
- }
- 
- .five-day {
+}
+
+.five-day {
     display: none;
     margin: 1em;
     padding: 1em;
- }
- 
- .title-title {
+}
+
+.title-title {
     text-align: center;
     padding: 1em;
- }
+}
 
- .article-section{
-     background-color: #f3e3bd;
-     
- }
+.article-section {
+    background-color: #f3e3bd;
 
- .article-section p{
-     padding: 1.5em;
- }
+}
 
- .article-title {
-     text-align: center;
-     padding: 1em;
- }
- 
+.article-section p {
+    padding: 1.5em;
+}
+
+.article-title {
+    text-align: center;
+    padding: 1em;
+}
+
 .article-author {
     text-align: center;
     padding: 0.5em;
-    
- }
 
- .article-section {
+}
+
+.article-section {
     padding: 1.5rem;
     overflow: auto;
 
@@ -220,7 +234,7 @@ picture.photoA {
 
 
 
- /* .article-section img {
+/* .article-section img {
     box-shadow: 0 0 20px #111;
     float: right;
  } 
@@ -235,45 +249,45 @@ picture.photoA {
   a:visited {
     color: var(--alternate-color-1);
  } */
- 
 
 
-  /* CONTACT INFORMATION AND MAP  */
-  /* CONTACT INFORMATION AND MAP  */
-  /* CONTACT INFORMATION AND MAP  */
-  /* CONTACT INFORMATION AND MAP  */
-  /* CONTACT INFORMATION AND MAP  */
 
- .contact-map img {
-   width: 100%;
-   
- }
- 
+/* CONTACT INFORMATION AND MAP  */
+/* CONTACT INFORMATION AND MAP  */
+/* CONTACT INFORMATION AND MAP  */
+/* CONTACT INFORMATION AND MAP  */
+/* CONTACT INFORMATION AND MAP  */
+
+.contact-map img {
+    width: 100%;
+
+}
+
 .contact-information {
     margin-top: 1em;
     padding: 1em;
 }
 
- .contact-information {
+.contact-information {
     background-color: #c6e7e6;
- }
- 
- .contact-information-section {
+}
+
+.contact-information-section {
     text-align: center;
- }
- 
- .contact-information-section h3 {
+}
+
+.contact-information-section h3 {
     margin: 0;
- }
- 
- .social-media-icons {
+}
+
+.social-media-icons {
     padding: 1em 0;
- }
- 
- .social-media-icons img {
+}
+
+.social-media-icons img {
     width: 1.8em;
- }
- 
+}
+
 /*________________________________________________*/
 /*Footer CSS*/
 
@@ -282,7 +296,7 @@ footer {
     width: 80%;
     text-align: left;
     text-align: center;
-    background-color:  #f5c453;
+    background-color: #f5c453;
     color: #050300;
     margin: 20px auto;
 }
@@ -303,10 +317,39 @@ footer {
 }
 
 #eventsection {
-    background-color:  #f3e3bd;
+    background-color: #f3e3bd;
     text-align: center;
     padding: 1em;
     margin-right: 1em;
     margin-left: 1em;
     margin-bottom: 1em;
 }
+
+/*________________________________________________*/
+/*CONTACT CSS*/
+
+/*________________________________________________*/
+/*HOME CSS*/
+
+/*________________________________________________*/
+/*RENTALS CSS*/
+
+/*________________________________________________*/
+/*RESERVATIONS CSS*/
+
+/*________________________________________________*/
+/*THANKS_CSS*/
+
+#thanks_div {
+    display: flex;
+    float: right;
+}
+
+#thanks_form {}
+
+#thanks_button {
+    float: center;
+}
+
+/*________________________________________________*/
+/*TOURS CSS*/

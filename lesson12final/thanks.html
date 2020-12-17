@@ -14,39 +14,56 @@
     <link rel="stylesheet" href="css/large.css">
 </head>
 
-<header>
-    <img class="logo-image" src="images/sun.png" alt="sun-image">
-    <div>
-        <h1 class="label-title">Cozumel Rentals</h1>
-        <div class="catch-phrase">¡¡¡Relajate!!!</div>
-    </div>
-</header>
+<body>
+    <header>
+        <img class="logo-image" src="images/sun.png" alt="sun-image">
+        <div>
+            <h1 class="label-title">Cozumel Rentals</h1>
+            <div class="catch-phrase">¡¡¡Relajate!!!</div>
+        </div>
+    </header>
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primarynav" class="hide">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="#">RENTALS</a></li>
+            <li><a href="reservations.html">RESERVATIONS</a></li>
+            <li><a href="tours.html">TOURS</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
 
-<main>
 
-    <h2>Your reservation has been comfirmed!</h2>
 
-    <form method="get" action="reservations.html">
-        <button href="reservations.html"> Return to reservations </button>
-    </form>
-</main>
-
-<footer>
-    &copy; <span id="copyrightyear"></span> | AZTEC RENTALS | MEXICO
-    <div id="current-date"></div>
-    <div class="social-media-icons">
-        <img src="images/facebook.png" alt="facebook">
-        <img src="images/twitter.png" alt="twitter">
-        <img src="images/youtube.png" alt="youtube">
-        <img src="images/linkedin.png" alt="linkedin">
-    </div>
-    <div class="contact-address">
-        <div>&#9742; 999-999-9999</div>
-        <div>&#9993; el-email-de-cozumel@email.com</div>
-    </div>
-</footer>
-<script src="js/date.js"></script>
-<script src="js/navmenu.js"></script>
+    <main>
+        
+      
+<div class="thanks_div">
+            <h2>Your reservation has been confirmed!</h2>
+                    <form class="thanks_form" method="get" action="reservations.html">
+                    <button class="thanks_button" href="reservations.html"> Return to reservations </button>
+                </form>
+            </div>
+    
+                 
+        
+    </main>
+    <footer>
+        &copy; <span id="copyrightyear"></span> | AZTEC RENTALS | MEXICO
+        <div id="current-date"></div>
+        <div class="social-media-icons">
+            <img src="images/facebook.png" alt="facebook">
+            <img src="images/twitter.png" alt="twitter">
+            <img src="images/youtube.png" alt="youtube">
+            <img src="images/linkedin.png" alt="linkedin">
+        </div>
+        <div class="contact-address">
+            <div>&#9742; 999-999-9999</div>
+            <div>&#9993; email-de-cozumel@email.com</div>
+        </div>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/navmenu.js"></script>
 </body>
 
 </html>

@@ -36,70 +36,70 @@
     <main>
         <h1>RESERVATION FORM</h1>
         <form method="get" action="thanks.html">
-            <fieldset>
-                <legend>CONTACT INFORMATION</legend>
-                <label>First Name* <input type="text" name="name" pattern="(\w| ){3,}" required></label>
+            <fieldset  class="reservations_fieldset">
+                <legend  class=""contact_legend>CONTACT INFORMATION</legend>
+                <label class="first_name_input">First Name* <input type="text" name="name" pattern="(\w| ){3,}" required></label>
                 <br>
-                <label>Last Name* <input type="text" name="lname" required></label>
+                <label class="last_name-input" >Last Name* <input type="text" name="lname" required></label>
                 <br>
-                <label>Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></label>
+                <label class="phone_input">Phone* <input type="tel" name="phone" placeholder="123 456 7890" required></label>
                 <br>
-                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="email_input">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
                 <br>
-                <label>Home state/country* <input type="text" name="name" pattern="(\w| ){3,}" required></label>
+                <label class="country_imput">Home state/country* <input type="text" name="name" pattern="(\w| ){3,}" required></label>
                 <br>
-                <label>Home city* <input type="text" name="name" pattern="(\w| ){3,}" required></label>
+                <label class="city_input">Home city* <input type="text" name="name" pattern="(\w| ){3,}" required></label>
                 <br>
-                <label>Zip Code* <input type="number" name="zip" placeholder="#####" required></label>
+                <label class="number_imput">Zip Code* <input type="number" name="zip" placeholder="#####" required></label>
                 <br>
-                <label>Cruise Line (if applicable) <input type="text" name="name" pattern="(\w| ){3,}" required></label>
+                <label class="cruise_input">Cruise Line (if applicable) <input type="text" name="name" pattern="(\w| ){3,}" required></label>
                 <br>
-                <label>Rental Period Start* <input type="date" required></label>
+                <label class="start_input">Rental Period Start* <input type="date" required></label>
                 <br>
-                <label>Rental Period End* <input type="date" required></label>
+                <label class="end_imput">Rental Period End* <input type="date" required></label>
 
             </fieldset>
             <fieldset>
-                <legend>RENTAL INFORMATION</legend>
-                <div>Rental Type</div>
-                <label>Number of vehicles* <input type="number" name="zip" placeholder="##" required></label>
+                <legend  class="rental_legend">RENTAL INFORMATION</legend>
+                <div class="rental_div">Rental Type</div>
+                <label class="">Number of vehicles* <input type="number" name="zip" placeholder="##" required></label>
                 <br>
                 <br>
-                <legend>Honda</legend>
-                <label><input type="radio" name="vehicle" value="yes">Metropolitan (49cc) 1 person</label>
+                <legend class="honda_legend">Honda</legend>
+                <label class="metro"><input type="radio" name="vehicle" value="yes">Metropolitan (49cc) 1 person</label>
                 <br>
-                <label><input type="radio" name="vehicle" value="yes">Dio (110cc) 2 person</label>
+                <label class=""><input type="radio" name="vehicle" value="yes">Dio (110cc) 2 person</label>
                 <br>
-                <label><input type="radio" name="vehicle" value="yes">PCX150 (49cc) 2 person</label>
-                <br>
-                <br>
-                <legend>ATV Side-by-Side</legend>
-                <label><input type="radio" name="vehicle" value="yes">Honda Pioneer 1000</label>
+                <label class=""><input type="radio" name="vehicle" value="yes">PCX150 (49cc) 2 person</label>
                 <br>
                 <br>
-                <legend>Jeep</legend>
-                <label><input type="radio" name="vehicle" value="yes">4-door Wrangler 5 person (manual & A/C) </label>
+                <legend class="">ATV Side-by-Side</legend>
+                <label class=""><input type="radio" name="vehicle" value="yes">Honda Pioneer 1000</label>
                 <br>
-                <label><input type="radio" name="vehicle" value="yes">2-door Wrangler 4 person max (open air
+                <br>
+                <legend class="">Jeep</legend>
+                <label class=""><input type="radio" name="vehicle" value="yes">4-door Wrangler 5 person (manual & A/C) </label>
+                <br>
+                <label class=""><input type="radio" name="vehicle" value="yes">2-door Wrangler 4 person max (open air
                     manual)</label>
             </fieldset>
 
             <fieldset>
-                <legend>Location</legend>
-                <legend>Drop off?</legend>
-                <label><input type="radio" name="dropoff" value="yes"> Yes</label>
-                <label><input type="radio" name="dropoff" value="no"> No</label>
-                <label><input type="radio" name="dropoff" value="maybe"> Maybe</label>
+                <legend class="location_legend">Location</legend>
+                <legend class="dropoff_legend">Drop off?</legend>
+                <label class="dropoff_yes"><input type="radio" name="dropoff" value="yes"> Yes</label>
+                <label class="dropoff_no"><input type="radio" name="dropoff" value="no"> No</label>
+                <label class="dropoff_maybe"><input type="radio" name="dropoff" value="maybe"> Maybe</label>
                 <br>
                 <label>Region
-                    <select name="LOCATION">
-                        <option value="select" disabled>Select Region</option>
-                        <option value="preston">Playa del Carmen-Cozmel</option>
-                        <option value="sodasprings">Terminal Puerta Maya</option>
+                    <select class="region_select" name="LOCATION">
+                        <option class="disabled select" value="select" disabled>Select Region</option>
+                        <option class="region_cozumel" value="preston">Playa del Carmen-Cozmel</option>
+                        <option class="region_terminal" value="sodasprings">Terminal Puerta Maya</option>
                     </select>
                 </label>
                 <br>
-                <label>Special Accomidations? <input list="comments"></label>
+                <label class="accomidation_lable" >Special Accomidations? <input list="comments"></label>
             </fieldset>
 
 
@@ -122,7 +122,7 @@
         </div>
         <div class="contact-address">
             <div>&#9742; 999-999-9999</div>
-            <div>&#9993; el-email-de-cozumel@email.com</div>
+            <div>&#9993; email-de-cozumel@email.com</div>
         </div>
     </footer>
     <script src="js/date.js"></script>
