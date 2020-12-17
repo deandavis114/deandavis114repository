@@ -327,6 +327,17 @@ footer {
 
 /*________________________________________________*/
 /*CONTACT CSS*/
+#contact-information-address{
+    padding: 1em;
+}
+
+#phone-number{
+    padding: 1.5em;
+}
+
+#google_map {
+    max-width: 100%;
+}
 
 /*________________________________________________*/
 /*HOME CSS*/
