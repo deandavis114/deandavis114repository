@@ -1,0 +1,38 @@
+
+#article-section-contact{
+    background-color: #f3e3bd;
+}
+
+
+.article-title-html h3{
+    padding: 1em
+}
+
+#article-section-title h4{
+    padding-top: 1em;
+    padding-left: 2.5em;
+}
+
+.resort-info {
+    padding: 2em;
+}
+
+.resort-img {
+    max-width: 100%;
+    padding: 2em;
+    ;
+}
+
+.article-section-contact {
+    background-color: #f3e3bd;
+    padding: 1em;
+    
+}
+
+.comment-table{
+    padding: 1em;
+}
+
+#contact-title-div{
+    padding-left: 5em;
+}

@@ -218,7 +218,7 @@ picture.photoA {
 .article-section {
     padding: 1.5rem;
     overflow: auto;
-
+    
 }
 
 .article-section img {
@@ -335,7 +335,7 @@ footer {
     padding: 1.5em;
 }
 
-#google_map {
+.google_map {
     max-width: 100%;
 }
 
@@ -347,6 +347,10 @@ footer {
 
 /*________________________________________________*/
 /*RESERVATIONS CSS*/
+
+#reservations_fieldset{
+    background-color: #f3e3bd;
+}
 
 /*________________________________________________*/
 /*THANKS_CSS*/
@@ -364,3 +368,5 @@ footer {
 
 /*________________________________________________*/
 /*TOURS CSS*/
+
+

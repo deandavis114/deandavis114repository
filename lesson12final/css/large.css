@@ -57,7 +57,10 @@
         margin: auto;
     }
 
-
+    .resort-img {
+        max-width: 100%;
+        padding-left: 18em;
+    }
 
 
 

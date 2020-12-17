@@ -35,5 +35,17 @@
  img {
      max-width: 100%;
  }
+
+ .article-section-contact {
+     display: grid;
+     columns: 1fr;
+ }
+
+ #article-section-title h4 {
+    padding: 1em;
+ }
+ .resort-image{
+     max-width: 100%;
+ }
 } 
 
