@@ -36,3 +36,41 @@
 #contact-title-div{
     padding-left: 5em;
 }
+
+
+/* Tours */
+
+.alphabet{
+
+}
+
+#alphabet-div h2{
+    padding: 1em;
+}
+#alphabet-div h4{
+   padding-left: 2em;
+}
+
+#alphabet-div p{
+    padding: 2em;
+}
+
+#alphabet-img {
+    max-width: 100%;
+}
+.alphabet-info{
+
+}
+
+/* home */
+
+.summary{
+    margin: 1em;
+    padding: 1em;
+    background-color:#f3e3bd ;
+}
+
+.summary-img{
+    max-width: 100%;
+    padding: 2em;
+}
